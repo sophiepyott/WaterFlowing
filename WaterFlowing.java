@@ -1,5 +1,14 @@
+// Sophie Pyott
+// 12/02/25
+// shows if a river flows off the map by checking the elevations
+
 public class WaterFlowing{
 
+    // pre-con: map is an establish 2D array
+    // r and c are in the map
+    // used is the same size as map
+
+    // post-con: returns true is water can eventaully reach the edge of the map, otherwise returns false
     public static boolean canFlowOff(int[][] map, int r, int c, boolean[][] used){
         //if already on the edge
         if(r == 0 || c == 0 || r == map.length -1 || c == map[0].length - 1){
